@@ -235,16 +235,15 @@
 
 }
 
-/* .main-info {
+.main-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
     margin-bottom: 95px;
     padding: 0 85px 0 95px;
-    width: 1140px;
-    height: 200px;
-    border: 1px solid rgb(0, 0, 0);
+    max-width: 1140px;
+    max-height: 200px;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0 20px 20px 10px rgba(0, 0, 0, 0.06);
@@ -315,4 +314,4 @@
 
 .section-subscription {
     padding-top: 80px;
-} */
+}
