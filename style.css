@@ -163,7 +163,7 @@
     font-family: var(--font);
 }
 
-.title {
+.present-title {
     margin-bottom: 20px;
     color: var(--black);
     font-weight: 500;
@@ -171,7 +171,7 @@
     line-height: 70px;
 }
 
-.text {
+.present-text {
     margin-bottom: 50px;
     color: var(--grey);
     font-weight: 400;
@@ -228,12 +228,12 @@
         margin: 0;
     }
 
-    .title {
+    .present-title {
         font-size: 30px;
         line-height: 50px;
     }
 
-    .text {
+    .present-text {
         font-size: 12px;
         line-height: 24px;
     }
@@ -372,3 +372,109 @@
 }
 
 /* //////////////////////////////////////////////////////// */
+
+.section-choose-plan {
+    margin-bottom: 150px;
+}
+
+.section-choose-plan-title-content {
+    margin: 80px 0 60px 0;
+    text-align: center;
+}
+
+.choose-plan-title {
+    margin-bottom: 20px;
+    font-family: var(--font);
+    color: var(--black);
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+}
+
+.choose-plan-text {
+    font-family: var(--font);
+    color: var(--grey);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+/* ////////////////////////////////////////////// */
+.choose-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    text-align: center;
+    padding: 80px 67px 50px;
+    max-width: 330px;
+    max-height: 760px;
+    font-family: var(--font);
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+    background-color: #ffff;
+}
+
+.box-title {
+    margin: 30px 0;
+    font-family: var(--font);
+    color: var(--grey);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.box-list-item {
+    float: left;
+    padding-left: 30px;
+    background: url(./img/jam_check.svg) no-repeat left center;
+    list-style-type: none;
+    font-family: var(--font);
+    color: var(--grey);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.select-blok {
+    margin-top: 300px;
+}
+
+.select-block-title {
+    margin-bottom: 20px;
+    font-family: var(--font);
+    color: var(--black);
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.btn-select {
+    width: 177px;
+    height: 45px;
+    border: 2px solid var(--red);
+    border-radius: 50px;
+    background-color: inherit;
+    font-family: var(--font);
+    color: var(--red);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+@media (max-width: 1040px) {
+    .choose-box {
+        justify-content: center;
+        display: grid;
+        gap: 20px 0;
+    }
+
+    .select-blok {
+        margin-top: 250px;
+    } 
+
+    .box {
+        padding: 50px;
+    }
+}
