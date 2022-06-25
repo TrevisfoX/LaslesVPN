@@ -54,6 +54,7 @@ a:hover {
 
 ul li {
     list-style: none;
+    color: var(--grey);
 }
 
 .wrapper {
@@ -83,10 +84,6 @@ ul li {
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
-}
-
-.item {
-    list-style-type: none;
 }
 
 .button {
@@ -349,7 +346,6 @@ ul li {
 
 .features-item {
     padding-left: 35px;
-    color: var(--grey);
     background: url(../img/icons/mark.svg) no-repeat left center;
     font-weight: 400;
     font-size: 14px;
@@ -391,159 +387,119 @@ ul li {
 
 /* SECTION PRICING */
 
-.section-bg-grey{
+.section-bg-grey {
     background-image: linear-gradient(to bottom, #f6f6f6, #f8f8f8, #fafafa, #fdfdfd, #ffffff);
-}
-
-.section-choose-plan-title-content {
-    text-align: center;
 }
 
 .section-pricing-body {
     margin: 0 0 150px 0;
-    padding: 80px 0 0 ;
+    padding: 80px 0 0;
 }
 
-.choose-plan-title {
-    margin-bottom: 20px;
-    font-family: var(--font);
-    color: var(--black);
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 50px;
+.section-pricing-title-content {
+    text-align: center;
+    margin: 0 0 60px;
 }
 
-.choose-plan-text {
-    font-family: var(--font);
-    color: var(--grey);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-}
-
-/* ////////////////////////////////////////////// */
-.choose-box {
+.pricing-box {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 50px
 }
 
 .box {
-    text-align: center;
-    padding: 80px 67px 50px;
     max-width: 330px;
-    max-height: 760px;
-    font-family: var(--font);
+    padding: 50px 68px;
+    background: #FFFFFF;
     border: 2px solid #DDDDDD;
     border-radius: 10px;
-    background-color: #ffff;
+}
+
+.box-title-body {
+    text-align: center;
+    margin: 0 0 30px 0;
 }
 
 .box-title {
-    margin: 30px 0;
-    font-family: var(--font);
-    color: var(--grey);
+    margin: 30px 0 0 0;
+    color: var(--black);
     font-weight: 500;
     font-size: 18px;
     line-height: 30px;
 }
 
-.box-list-item {
-    float: left;
-    padding-left: 30px;
-    background: url(./img/jam_check.svg) no-repeat left center;
-    list-style-type: none;
-    font-family: var(--font);
+.box-list-body-free {
+    margin-bottom: 130px;
+}
+
+.box-list-body-standard {
+    margin-bottom: 90px;
+}
+
+.box-list-body-premium {
+    margin-bottom: 50px;
+}
+
+.box-item {
+    padding: 0 0 0 30px;
     color: var(--grey);
     font-weight: 400;
     font-size: 14px;
     line-height: 30px;
+    background: url(../img/icons/jam_check.svg) no-repeat left center;
 }
 
-.select-blok {
-    margin-top: 300px;
+.box-item:not(:last-child) {
+    margin: 0 0 10px 0;
 }
 
-.select-block-title {
-    margin-bottom: 20px;
-    font-family: var(--font);
+.select-title {
+    margin: 0 0 20px 0;
     color: var(--black);
     font-weight: 500;
     font-size: 25px;
     line-height: 30px;
 }
 
-.select-block-title>span {
-    color: #4F5665;
+.select-title>span {
+    color: var(--grey);
     font-weight: 400;
-    font-size: 25px;
-    line-height: 30px;
 }
 
-.btn-select {
-    width: 177px;
-    height: 45px;
+.select-block-body {
+    text-align: center;
+}
+
+.button-select {
+    padding: 13px 63px;
+    background-color: inherit;
+    color: var(--red);
     border: 2px solid var(--red);
     border-radius: 50px;
-    background-color: inherit;
-    font-family: var(--font);
-    color: var(--red);
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
 }
 
-@media (max-width: 1040px) {
-    .choose-box {
-        justify-content: center;
-        display: grid;
-        gap: 20px 0;
-    }
-
-    .select-blok {
-        margin-top: 250px;
-    }
-
-    .box {
-        padding: 50px;
-    }
-}
-
-
-/* ////////////////////////////////////////////////////// */
+/* SECTION LOCATIONS */
 
 .section-location {
     text-align: center;
 }
 
-.section-location-title-content {
-    margin-bottom: 150px;
+.section-location-title-body {
+    margin-bottom: 100px;
 }
 
-.loaction-title {
-    margin-bottom: 20px;
-    font-family: var(--font);
-    color: var(--black);
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 50px;
-}
-
-.loaction-text {
-    font-family: var(--font);
-    color: var(--grey);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-}
-
-.brands {
+.companies {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
-/* .//////////////////////////////////////////////////// */
+/* SECTION TESTIMONIALS*/
 
 .section-testimonials {
     text-align: center;
