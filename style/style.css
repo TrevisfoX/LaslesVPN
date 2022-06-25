@@ -57,6 +57,10 @@ ul li {
     color: var(--grey);
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .wrapper {
 
     overflow: hidden;
@@ -497,40 +501,17 @@ ul li {
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
+    margin: 0 0 50px 0;
 }
 
 /* SECTION TESTIMONIALS*/
 
-.section-testimonials {
+.section-testimonials-title-body {
     text-align: center;
-}
-
-.section-testimonials-title-content {
     margin-bottom: 60px;
 }
 
-.testimonials-title {
-    margin: 50px 0 20px 0;
-    font-family: var(--font);
-    color: var(--black);
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 50px;
-}
-
-.testimonials-text {
-    font-family: var(--font);
-    color: var(--grey);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-}
-
 /* SLIDER */
-
-.section-testimonials {
-    margin-bottom: 300px;
-}
 
 .slider {
     display: flex;
@@ -538,23 +519,57 @@ ul li {
 }
 
 .slider-item {
-    max-width: 400px;
-    margin-right: 50px;
+    max-width: fit-content;
+    height: 230px;
+    overflow: hidden;
     border: 2px solid #DDDDDD;
     border-radius: 10px;
+    margin: 0 25px;
     padding: 25px;
 }
 
-.slider-item:first-child {
-    margin-right: 0px;
+.user-info-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 20px 0;
 }
 
-.user-info {
-    margin-bottom: 10px;
+.username-body {
+    margin-left: 20px;
 }
 
 .username {
+    margin-bottom: 5px;
+    color: var(--black);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.dislocation {
+    color: var(--grey);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.personality-body {
     display: flex;
+    align-items: center;
+}
+
+.user-rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating {
+    color: var(--black);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin-right: 10px;
 }
 
 .slick-slider {
@@ -574,15 +589,9 @@ ul li {
     position: relative;
 }
 
-@media (max-width:767px) {
-    .slider {
-        padding: 0px 40px;
-    }
-}
-
 .slider .slick-arrow {
     position: absolute;
-    top: 200px;
+    top: 250px;
     margin: 30px 0px 0px 0px;
     z-index: 10;
     font-size: 0;
@@ -593,13 +602,15 @@ ul li {
 .slider .slick-arrow.slick-prev {
     left: 0;
     border: none;
-    background: url('./img/arrow-left.svg') 0 0 / 100% no-repeat;
+    background: url('../img/icons/arrow-left.svg') 0 0 / 100% no-repeat;
+    cursor: pointer;
 }
 
 .slider .slick-arrow.slick-next {
     right: 0;
     border: none;
-    background: url('./img/arrow-right.svg') 0 0 / 100% no-repeat;
+    background: url('../img/icons/arrow-right.svg') 0 0 / 100% no-repeat;
+    cursor: pointer;
 }
 
 
