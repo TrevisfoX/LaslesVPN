@@ -154,7 +154,7 @@ ul li {
 
 .button-sign-up:hover {
     background-color: var(--red);
-    color: white;
+    color: #FFFFFF !important;
 }
 
 @media (max-width: 500px) {
@@ -417,7 +417,12 @@ ul li {
     background: #FFFFFF;
     border: 2px solid #DDDDDD;
     border-radius: 10px;
+    cursor: pointer;
 }
+
+.active {
+    border-color: var(--red);
+  }
 
 .box-title-body {
     text-align: center;
@@ -483,6 +488,13 @@ ul li {
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.button-select:hover {
+    background-color: var(--red);
+    color: #ffffff;
 }
 
 /* SECTION LOCATIONS */
