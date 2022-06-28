@@ -92,10 +92,12 @@ ul li {
 @media screen and (max-width: 1000px) {
     .header-body {
         flex-direction: column;
+        margin-top: 35px;
+        margin-bottom: 45px;
     }
 
     .header-nav {
-        margin: 40px 0;
+        margin: 30px 0;
     }
 }
 
@@ -140,7 +142,7 @@ ul li {
     color: #FFFFFF;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 530px) {
     .header-nav {
         margin-top: 20px;
     }
@@ -150,7 +152,7 @@ ul li {
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 400px) {
     .header-nav {
         margin-top: 15px;
     }
@@ -193,7 +195,7 @@ ul li {
 }
 
 .title-block-subtitle {
-    margin: 0 0 62.5px;
+    margin-bottom: 62.5px;
 }
 
 .title-block-button-start {
@@ -210,7 +212,7 @@ ul li {
 
 @media screen and (max-width: 1000px) {
     .section-about-illustration {
-        width: 100%;
+        display: none;
     }
 
     .section-about-body {
@@ -219,6 +221,11 @@ ul li {
         justify-content: center;
         text-align: center;
         align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .title-block-subtitle {
+        margin-bottom: 30px;
     }
 
     .section-about-title-block {
@@ -263,12 +270,9 @@ ul li {
         margin: 0 auto;
         max-width: fit-content;
         max-height: fit-content;
-        padding: 50px;
+        padding: 30px;
         text-align: center;
-    }
-
-    .info-block:not(:last-child) {
-        padding-bottom: 50px;
+        margin-bottom: 50px;
     }
 
     .dividing-line {
@@ -350,7 +354,8 @@ ul li {
 @media screen and (max-width: 1000px) {
 
     .section-features-body {
-        flex-direction: column;
+        text-align: center;
+        margin-bottom: 50px;
     }
 
     .section-features-illustration {
@@ -484,6 +489,17 @@ ul li {
     color: #ffffff;
 }
 
+@media screen and (max-width: 1000px) {
+    .section-pricing-body {
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .box {
+        padding: 20px 38px;
+    }
+}
+
 /* SECTION LOCATIONS */
 
 .section-location-body {
@@ -500,6 +516,7 @@ ul li {
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
+    margin-top: 80px;
 }
 
 /* SECTION TESTIMONIALS*/
@@ -589,7 +606,7 @@ ul li {
 
 .slider {
     position: relative;
-    padding: 0 0 300px 0;
+    padding: 0 0 350px 0;
 }
 
 .slider .slick-arrow {
@@ -627,7 +644,7 @@ ul li {
     display: flex;
     position: relative;
     justify-content: space-between;
-    padding: 175px 0 105px 0;
+    padding: 200px 0 105px 0;
 }
 
 .footer-links {
@@ -758,7 +775,7 @@ ul li {
 .button-subscribe {
     padding: 17.5px 65px;
     background-color: var(--red);
-    color: #FFFFFF !important;
+    color: #FFFFFF;
     border: none;
     border-radius: 10px;
     font-weight: 700;
@@ -776,5 +793,11 @@ ul li {
         display: flex;
         flex-direction: column;
         text-align: center;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .section-subscribe-body {
+        padding: 10px;
     }
 }
