@@ -81,92 +81,162 @@ ul li {
 
 /* HEADER */
 
-.header-body {
+.header-nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 55px;
-    margin-bottom: 85px;
 }
 
-@media screen and (max-width: 1000px) {
-    .header-body {
-        flex-direction: column;
-        margin-top: 35px;
-        margin-bottom: 45px;
-    }
-
-    .header-nav {
-        margin: 30px 0;
-    }
-}
-
-.nav-list {
+.menu {
     display: flex;
 }
 
-.nav-item:not(:last-child) {
-    margin-right: 40px;
+.menu a {
+    padding: .5rem 1rem;
+    display: inline-block;
+    color: inherit;
 }
 
-.nav-link {
-    color: var(--grey);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    transition: 0.6s;
-}
-
-.nav-link:hover {
-    color: var(--black);
-}
-
-.button-sign-in {
-    color: var(--black);
-    font-weight: 500;
-}
-
-.button-sign-up {
-    font-weight: 500;
-    padding: 13px 45px;
-    margin-left: 30px;
-    color: var(--red);
-    background-color: inherit;
-    border: 1px solid var(--red);
-    border-radius: 50px;
-    transition: 0.6s;
-}
-
-.button-sign-up:hover {
-    background-color: var(--red);
-    color: #FFFFFF;
-}
-
-@media screen and (max-width: 530px) {
-    .header-nav {
-        margin-top: 20px;
+@media screen and (min-width: 800px) {
+    .submenu > li:hover > .submenu,
+    .menu > li:hover > .submenu {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .submenu {
+        opacity: 0;
+        transition: .3s;
+        pointer-events: none;
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
+    }
+    .menu > li {
+        width: 25%;
+        position: relative;
+    }
+    .submenu .submenu {
+        left: 100%;
+        top: 0;
+    }
+    .submenu {
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        
+    }
+    .submenu li {
+        background-color: #e0e0e0;
+        position: relative;
+        color: #000;
     }
 
-    .nav-item:not(:last-child) {
-        margin-right: 20px;
+    .btn-menu {
+        display: none;
     }
 }
 
-@media screen and (max-width: 400px) {
-    .header-nav {
-        margin-top: 15px;
-    }
-
-    .nav-list {
+@media screen and (max-width: 800px) {
+    .menu {
         flex-direction: column;
-        align-items: center;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        transition: .3s;
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
+}
+
+    .menu.active {
+        left: 0;
+        width: 100%;
     }
 
-    .nav-item:not(:last-child) {
-        margin-right: 0px;
-        margin-bottom: 10px;
+    .menu > li {
+        width: 100%;
     }
+
+    .btn-menu {
+        background: #000;
+        position: absolute;
+        right: .5rem;
+        top: .5rem;
+      
+        width: 3rem;
+        height: 3rem;
+        border: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+    
+    
+    .btn-menu .line ,
+    .btn-menu .line::after ,
+    .btn-menu .line::before {
+        display: inline-block;
+        background-color: #fff;
+        height: 4px;
+        transition: .3s;
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
 }
+    .btn-menu .line::after ,
+    .btn-menu .line::before  {
+        content: '';
+        width: 100%;
+        position: absolute;
+        left: 0;
+    }
+    .btn-menu .line::before {
+        top: .75rem;
+    }
+    .btn-menu .line::after {
+        top: -.75rem;
+    }
+    .btn-menu .line {
+        width: 90%;
+        position: relative;
+    }
+
+    .btn-menu.active .line {
+        background-color: transparent;
+    }
+
+    .btn-menu.active .line::after ,
+    .btn-menu.active .line::before {
+        top: 0;
+    }
+
+    .btn-menu.active .line::after {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+    } 
+    .btn-menu.active .line::before {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+    }   
+    
+
+}
+
+/* Burger */
+
+
 
 /* MAIN CONTENT */
 

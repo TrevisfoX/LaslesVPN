@@ -16,39 +16,46 @@
 			type="image/x-icon"
 		/>
 		<link rel="stylesheet" href="../style/style.css" />
-		<link rel="stylesheet" href="../style/adaptive.css">
+		<link rel="stylesheet" href="../style/adaptive.css" />
 		<title>LaslesVPN</title>
 	</head>
 	<body>
 		<!-- HEADER -->
 		<header class="header">
-			<div class="header-body container">
-				<a href="#">
-					<img src="../img/logo/logo.svg" alt="logo" />
-				</a>
-				<nav class="header-nav">
-					<ul class="nav-list">
-						<li class="nav-item">
-							<a class="nav-link" href="#about">About</a>
+			<div class="container">
+				<button class="btn-menu" id="btn-menu" onclick="toggleMenu()">
+					<div class="line"></div>
+				</button>
+				<nav class="header-nav menu" id="list-menu">
+					<ul >
+						<a href="#">
+							<img
+								class="header-logo"
+								src="../img/logo/logo.svg"
+								alt="logo"
+							/>
+						</a>
+						<li class="list-item">
+							<a class="list-link" href="#about">About</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#features">Features</a>
+						<li class="list-item">
+							<a class="list-link" href="#features">Features</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#pricing">Pricing</a>
+						<li class="list-item">
+							<a class="list-link" href="#pricing">Pricing</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#testimonials">Testimonials</a>
+						<li class="list-item">
+							<a class="list-link" href="#testimonials">Testimonials</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#help">Help</a>
+						<li class="list-item">
+							<a class="list-link" href="#help">Help</a>
 						</li>
+						<div class="header-buttons-group">
+							<a class="button-sign-in button" href="#">Sign In</a>
+							<a class="button-sign-up button" href="#">Sign Up</a>
+						</div>
 					</ul>
 				</nav>
-				<div class="header-buttons-group">
-					<a class="button-sign-in button" href="#">Sign In</a>
-					<a class="button-sign-up button" href="#">Sign Up</a>
-				</div>
 			</div>
 		</header>
 		<!-- MAIN -->
@@ -507,10 +514,14 @@
 								<a class="footer-link" href="#">About Us</a>
 							</li>
 							<li class="footer-item">
-								<a class="footer-link" href="#">Privacy Policy</a>
+								<a class="footer-link" href="#"
+									>Privacy Policy</a
+								>
 							</li>
 							<li class="footer-item">
-								<a class="footer-link" href="#">Terms of Service</a>
+								<a class="footer-link" href="#"
+									>Terms of Service</a
+								>
 							</li>
 						</ul>
 					</div>
@@ -521,7 +532,9 @@
 								<a class="footer-link" href="#">Affiliate</a>
 							</li>
 							<li class="footer-item">
-								<a class="footer-link" href="#">Become Partner</a>
+								<a class="footer-link" href="#"
+									>Become Partner</a
+								>
 							</li>
 						</ul>
 					</div>
@@ -530,6 +543,7 @@
 		</footer>
 
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="../scripts/burger.js"></script>
 		<script src="../scripts/slick.min.js"></script>
 		<script src="../scripts/script.js"></script>
 	</body>
