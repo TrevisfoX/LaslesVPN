@@ -1,3 +1,5 @@
+// Slider
+
 $(document).ready(function () {
 	$(".slider").slick({
 		arrows: true,
@@ -16,6 +18,8 @@ $(document).ready(function () {
 		],
 	});
 });
+
+// Add red border in pricing section
 
 const box = document.querySelectorAll(".box");
 
