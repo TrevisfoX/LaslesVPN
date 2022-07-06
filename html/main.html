@@ -15,11 +15,15 @@
 			href="../img/icons/favicon.svg"
 			type="image/x-icon"
 		/>
+		<link rel="stylesheet" href="../style/loader.css" />
 		<link rel="stylesheet" href="../style/style.css" />
-		<link rel="stylesheet" href="../style/adaptive.css" />
 		<title>LaslesVPN</title>
 	</head>
-	<body>
+	<body>	
+		<!-- LOADER -->
+		<div id="preloader">
+			<img src="../img/ball-preloader.gif" alt="preloader">
+		</div>
 		<!-- HEADER -->
 		<header class="header">
 			<div class="container">
@@ -32,7 +36,11 @@
 				</button>
 				<nav class="navbar">
 					<a href="./main.html">
-						<img src="../img/logo/logo.svg" alt="logo" />
+						<img
+							class="header-logo"
+							src="../img/logo/logo.svg"
+							alt="logo"
+						/>
 					</a>
 					<div class="header-nav" id="list-burger">
 						<ul class="nav-list">
@@ -552,9 +560,11 @@
 			</div>
 		</footer>
 
+		<script src="../scripts/preloader.js"></script>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script src="../scripts/burger.js"></script>
 		<script src="../scripts/slick.min.js"></script>
-		<script src="../scripts/script.js"></script>
+		<script src="../scripts/burger.js"></script>
+		<script src="../scripts/pricing.js"></script>
+		<script src="../scripts/slider.js"></script>
 	</body>
 </html>

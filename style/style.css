@@ -7,7 +7,7 @@
     --font: 'Rubik', sans-serif;
 }
 
-/* NORMALIE*/
+/* NORMALIZE*/
 
 * {
     padding: 0;
@@ -24,6 +24,7 @@
 }
 
 body {
+    overflow-x: hidden;
     font-family: var(--font);
 }
 
@@ -73,6 +74,14 @@ ul li {
 
 .header {
     margin: 0 0 90px 0;
+}
+
+.header-logo {
+    transition: transform 250ms ease-in-out;
+}
+
+.header-logo:hover {
+    transform: scale(1.1);
 }
 
 .header-nav {
