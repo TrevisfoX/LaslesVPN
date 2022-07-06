@@ -2,7 +2,6 @@
   "name": "laslesvpn",
   "version": "1.0.0",
   "description": "",
-  "main": "preloader.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +14,8 @@
   "bugs": {
     "url": "https://github.com/TrevisfoX/LaslesVPN/issues"
   },
-  "homepage": "https://github.com/TrevisfoX/LaslesVPN#readme"
+  "homepage": "https://github.com/TrevisfoX/LaslesVPN#readme",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
 }
