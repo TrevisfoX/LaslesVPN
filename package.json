@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/TrevisfoX/LaslesVPN#readme",
   "dependencies": {
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "node": "^18.4.0"
   }
 }
