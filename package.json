@@ -20,5 +20,7 @@
     "node": "^18.4.0"
   },
   "main": "index.html",
-  "devDependencies": {}
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
